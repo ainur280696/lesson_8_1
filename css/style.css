@@ -1,0 +1,173 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&display=swap);
+body{
+    max-width: 1000px;
+    margin:0 auto;
+    font-family: "Oswald";
+    text-align: justify;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+.header{
+    padding: 30px;
+}
+.logo{
+    padding-right: 100px;
+    display: inline-block;
+}
+.main{
+    margin: 0px 20px;
+    padding: 15px 5px;
+    color:black;
+}
+.main:hover{
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    color:black;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+.main:active{
+    border-color: rgb(138, 18, 18);
+    background-color: rgba(138, 18, 18, 0.705);
+}
+.text{
+    padding-top: 30px;
+    color: rgb(73, 67, 67);
+}
+.text h2{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: black;
+}
+.text p{
+    margin-bottom: 10px;
+}
+.text p::first-letter{
+    color:red;
+    font-size: 16px;
+}
+.myfth-one h2{
+    color:green;
+    margin-bottom: 10px;
+}
+.myfth-one p{
+    margin-bottom: 10px;
+}
+.myfth-one p:nth-of-type(odd){
+    color: chartreuse;
+}
+.myfth-one p:nth-of-type(even){
+    color:darkgreen;
+}
+.myfth-two::first-line{
+    color:darkmagenta;   
+}
+.myfth-two p, h2{
+    margin-bottom: 10px;
+}
+.myfth-two p:nth-child(2){
+    color: crimson;
+}
+.myfth-two p:nth-child(3){
+    color: rgb(216, 13, 108);
+}
+.link p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.reference{
+    display: block;
+    margin-bottom: 20px;
+}
+.reference:focus{
+    color:red;
+    text-shadow: 2px 2px 2px black;
+}
+.reference:visited{
+    color:red;
+}
+.button{
+    border: 2px solid lightblue;
+    background-color: lightblue;
+    border-radius: 5px;
+    padding: 10px 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+.button:focus{
+    outline: 2px solid blue;
+    color:blue;
+}
+.button:last-of-type{
+    margin-bottom: 20px;
+}
+.link-block-one{
+    border: 2px solid green;
+    background-color: lightgreen;
+    padding: 10px 5px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    display: inline-block;
+}
+.text-varicella, text-typhoid{
+    background-color: rgb(51, 138, 11);
+    padding: 30px;
+    display: none;
+    border-radius: 10px;
+}
+#varicella:target{
+    display: block;
+    margin-bottom: 20px;
+}
+.link-block-two{
+    border: 2px solid purple;
+    background-color: plum;
+    padding: 10px 5px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.text-typhoid{
+    background-color: rgb(138, 11, 127);
+    padding: 30px;
+    display: none;
+    border-radius: 10px;
+}
+#typhoid:target{
+    display: block;
+}
+.type-b::first-line{
+    text-decoration: underline;
+    color: chocolate;
+    font-size: 24px;
+    text-align: center;
+}
+.type-b p:nth-child(2){
+    color: coral;
+    margin-bottom: 20px;
+}
+/* .list-item::before{
+    content: "✯";
+    display: inline-block;
+    color:rgb(184, 111, 16);
+} */
+.list-item{
+    padding-left: 40px;
+}
+.list-item::before{
+    content:"";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('../img/vaccine.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 30px;
+    margin: 0px 10px 0px -40px;
+}
